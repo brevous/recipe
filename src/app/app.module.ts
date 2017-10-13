@@ -9,10 +9,10 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
-import {ListService} from './shopping-list/list.service';
-import {HttpModule} from '@angular/http';
-import {AppRoutingModule} from './app-routing.module';
-import {NgModule} from '@angular/core';
+import { ListService } from './shopping-list/list.service';
+import { HttpModule } from '@angular/http';
+import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
@@ -37,10 +37,11 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     HttpModule,
     AppRoutingModule
   ],
-  providers: [ListService],
-  bootstrap: [AppComponent]
+  providers: [ ListService ],
+  bootstrap: [ AppComponent ]
 })
 
-export class AppModule { }
+export class AppModule {
+}
 
 
