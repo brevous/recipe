@@ -37,4 +37,9 @@ export class ListService {
     this.ingredients[index] = newIngredient;
     this.ingsChanged.next(this.ingredients.slice());
   }
+
+  deleteIngredient(index: number) {
+    this.ingredients.splice(index, 1);
+    this.ingsChanged.next(this.ingredients.slice());
+  }
 }
