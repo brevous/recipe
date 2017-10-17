@@ -10,11 +10,11 @@ import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 const recipesRoutes: Routes = [
   {
     path: '', component: RecipesComponent, children: [
-    { path: '', component: RecipeStartComponent },
-    { path: 'new', component: RecipeEditComponent, canActivate: [ AuthGuardService ] },
-    { path: ':id', component: RecipeDetailComponent },
-    { path: ':id/edit', component: RecipeEditComponent, canActivate: [ AuthGuardService ] }
-  ]
+      { path: '', component: RecipeStartComponent },
+      { path: 'new', component: RecipeEditComponent, canActivate: [ AuthGuardService ] },
+      { path: ':id', component: RecipeDetailComponent },
+      { path: ':id/edit', component: RecipeEditComponent, canActivate: [ AuthGuardService ] }
+    ]
   },
 ];
 
@@ -22,7 +22,8 @@ const recipesRoutes: Routes = [
   imports: [
     RouterModule.forChild(recipesRoutes)
   ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: [ AuthGuardService ]
 })
 export class RecipesRoutingModule {
 }

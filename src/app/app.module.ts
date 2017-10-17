@@ -21,7 +21,6 @@ import { CoreModule } from './core/core.module';
     AuthModule,
     CoreModule
   ],
-  providers: [],
   bootstrap: [ AppComponent ]
 })
 

@@ -5,7 +5,6 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { DataStorageService } from '../shared/data-storage.service';
 import { AuthService } from '../auth/auth.service';
-import { AuthGuardService } from '../auth/auth-guard.service';
 import { RecipeService } from '../recipes/recipe.service';
 import { ListService } from '../shopping-list/list.service';
 
@@ -27,7 +26,6 @@ import { ListService } from '../shopping-list/list.service';
     RecipeService,
     DataStorageService,
     AuthService,
-    AuthGuardService
   ]
 })
 export class CoreModule {
